@@ -1,0 +1,17 @@
+{
+  "name": "cinema-seating-map",
+  "version": "1.0.0",
+  "homepage": "https://github.com/tyanigor/cinema-seating-map",
+  "private": true,
+  "authors": [
+    "tyanigor@inbox.ru"
+  ],
+  "dependencies": {
+    "angular": "1.4.x",
+    "angular-messages": "1.4.x",
+    "angular-route": "1.4.x",
+    "angular-resource": "1.4.x",
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.6"
+  }
+}

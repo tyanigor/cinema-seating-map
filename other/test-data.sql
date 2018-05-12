@@ -1,0 +1,71 @@
+INSERT INTO   t_hall  VALUES ('1', '1');
+INSERT INTO   t_hall  VALUES ('2', '2');
+
+INSERT INTO  t_user  VALUES ('1', '$2a$10$4vky1bLnVt6yKbYZhfdWxebvj8CxaAPA1XBJiHmrPyjrnCSPXo0Pi', '1', 'user1');
+INSERT INTO  t_user  VALUES ('2', '$2a$10$kTAiykvJS8YlarO76R85F.bZNbtAZpqUJV0aWvGyjCeA2WNQZne4y', '1', 'user2');
+
+INSERT INTO  t_row  VALUES ('1', 'false', '1', '1');
+INSERT INTO  t_row  VALUES ('2', 'false', '2', '1');
+INSERT INTO  t_row  VALUES ('3', 'true', '3', '1');
+INSERT INTO  t_row  VALUES ('4', 'true', '4', '1');
+INSERT INTO  t_row  VALUES ('5', 'false', '1', '2');
+INSERT INTO  t_row  VALUES ('6', 'true', '2', '2');
+INSERT INTO  t_row  VALUES ('7', 'true', '3', '2');
+
+INSERT INTO  t_session  VALUES ('1', '2015-12-21 23:00:00', 'Побег из Шоушенка', '2015-12-21 20:44:04', '1');
+INSERT INTO  t_session  VALUES ('2', '2015-12-21 23:30:16', 'Зеленая миля', '2015-12-21 20:30:00', '2');
+INSERT INTO  t_session  VALUES ('3', '2015-12-21 10:00:00', 'В сердце моря', '2015-12-21 08:30:00', '1');
+
+INSERT INTO  t_seat  VALUES ('1', '1', '1');
+INSERT INTO  t_seat  VALUES ('2', '2', '1');
+INSERT INTO  t_seat  VALUES ('3', '3', '1');
+INSERT INTO  t_seat  VALUES ('4', '4', '1');
+INSERT INTO  t_seat  VALUES ('5', '5', '1');
+INSERT INTO  t_seat  VALUES ('6', '1', '2');
+INSERT INTO  t_seat  VALUES ('7', '2', '2');
+INSERT INTO  t_seat  VALUES ('8', '3', '2');
+INSERT INTO  t_seat  VALUES ('9', '4', '2');
+INSERT INTO  t_seat  VALUES ('10', '5', '2');
+INSERT INTO  t_seat  VALUES ('11', '1', '3');
+INSERT INTO  t_seat  VALUES ('12', '2', '3');
+INSERT INTO  t_seat  VALUES ('13', '3', '3');
+INSERT INTO  t_seat  VALUES ('14', '4', '3');
+INSERT INTO  t_seat  VALUES ('15', '5', '3');
+INSERT INTO  t_seat  VALUES ('16', '1', '4');
+INSERT INTO  t_seat  VALUES ('17', '2', '4');
+INSERT INTO  t_seat  VALUES ('18', '3', '4');
+INSERT INTO  t_seat  VALUES ('19', '4', '4');
+INSERT INTO  t_seat  VALUES ('20', '5', '4');
+INSERT INTO  t_seat  VALUES ('21', '6', '4');
+INSERT INTO  t_seat  VALUES ('22', '1', '5');
+INSERT INTO  t_seat  VALUES ('23', '2', '5');
+INSERT INTO  t_seat  VALUES ('24', '3', '5');
+INSERT INTO  t_seat  VALUES ('25', '4', '5');
+INSERT INTO  t_seat  VALUES ('26', '1', '6');
+INSERT INTO  t_seat  VALUES ('27', '2', '6');
+INSERT INTO  t_seat  VALUES ('28', '3', '6');
+INSERT INTO  t_seat  VALUES ('29', '4', '6');
+INSERT INTO  t_seat  VALUES ('30', '5', '6');
+INSERT INTO  t_seat  VALUES ('31', '1', '7');
+INSERT INTO  t_seat  VALUES ('32', '2', '7');
+INSERT INTO  t_seat  VALUES ('33', '3', '7');
+INSERT INTO  t_seat  VALUES ('34', '4', '7');
+INSERT INTO  t_seat  VALUES ('35', '5', '7');
+
+INSERT INTO  t_operation  VALUES ('1', 'RESERVE', '19', '1', '2');
+INSERT INTO  t_operation  VALUES ('2', 'RESERVE', '20', '1', '2');
+INSERT INTO  t_operation  VALUES ('3', 'RESERVE', '5', '1', '2');
+INSERT INTO  t_operation  VALUES ('4', 'RESERVE', '10', '1', '2');
+INSERT INTO  t_operation  VALUES ('5', 'RESERVE', '24', '2', '2');
+INSERT INTO  t_operation  VALUES ('6', 'RESERVE', '16', '3', '2');
+INSERT INTO  t_operation  VALUES ('7', 'RESERVE', '17', '3', '2');
+INSERT INTO  t_operation  VALUES ('8', 'RESERVE', '1', '3', '2');
+INSERT INTO  t_operation  VALUES ('9', 'RESERVE', '1', '1', '1');
+INSERT INTO  t_operation  VALUES ('10', 'RESERVE', '2', '1', '1');
+INSERT INTO  t_operation  VALUES ('11', 'RESERVE', '16', '1', '1');
+INSERT INTO  t_operation  VALUES ('12', 'RESERVE', '17', '1', '1');
+INSERT INTO  t_operation  VALUES ('13', 'RESERVE', '26', '2', '1');
+INSERT INTO  t_operation  VALUES ('14', 'RESERVE', '27', '2', '1');
+
+drop sequence hibernate_sequence;
+create sequence hibernate_sequence start 36 increment 1;
